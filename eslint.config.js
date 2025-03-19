@@ -13,10 +13,15 @@ export default antfu(
   },
   {
     rules: {
+      // 添加引号规则
+      'quotes': ['error', 'single'],
       // vue顶级标签的顺序
-      'vue/block-order': ['error', {
-        order: ['template', 'script', 'style'],
-      }],
+      'vue/block-order': [
+        'error',
+        {
+          order: ['template', 'script', 'style'],
+        },
+      ],
       // 需要尾随逗号
       'comma-dangle': ['error', 'only-multiline'],
       // 允许console
@@ -32,17 +37,20 @@ export default antfu(
       // 禁止未使用的捕获组
       'regexp/no-unused-capturing-group': 'off',
       // 允许接口和类型别名中的成员之间使用三个分隔符
-      'style/member-delimiter-style': ['error', {
-        multiline: {
-          delimiter: 'semi',
-          requireLast: true,
+      'style/member-delimiter-style': [
+        'error',
+        {
+          multiline: {
+            delimiter: 'semi',
+            requireLast: true,
+          },
+          singleline: {
+            delimiter: 'semi',
+            requireLast: false,
+          },
+          multilineDetection: 'brackets',
         },
-        singleline: {
-          delimiter: 'semi',
-          requireLast: false,
-        },
-        multilineDetection: 'brackets',
-      }],
+      ],
       // if 语句后需要换行
       'antfu/if-newline': 'off',
     },

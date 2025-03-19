@@ -21,7 +21,8 @@
     "skipLibCheck": true
   },
   "vueCompilerOptions": {
-    "plugins": ["@uni-helper/uni-app-types/volar-plugin"]
+    "plugins": ["@uni-helper/uni-app-types/volar-plugin"],
+    "nativeTags": ["block", "component", "template", "slot"]
   },
   "include": [
     "src/**/*.ts",
