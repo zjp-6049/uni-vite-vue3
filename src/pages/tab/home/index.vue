@@ -8,7 +8,7 @@
     />
     <view class="px-30rpx text-center">
       <view class="font-size-36rpx color-gray-700">
-        uniapp 团队协作开发实践模板(Vue3)
+        uniapp 团队协作开发实践模板2(Vue3)
       </view>
       <view class="mt-20rpx color-gray-500">
         使用 uniapp+vite+vue3+typescript+uview-plus+unocss 搭建的适合团队协作的快速开发模版
